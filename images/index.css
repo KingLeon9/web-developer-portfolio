@@ -11,7 +11,7 @@ body {
     background-color: #f5f5f5;
     display: flex;
     flex-direction: column;
-    min-height: 100vh; /* Added */
+    min-height: 100vh;
 }
 
 /* Set header styles */
@@ -25,6 +25,19 @@ header {
 header h1 {
     font-size: 24px;
     margin-bottom: 10px;
+}
+
+.circle-image {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+}
+
+header img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
 }
 
 nav ul {
@@ -42,12 +55,54 @@ nav ul li a {
     text-decoration: none;
 }
 
+section#about p {
+    border: 2px solid #333;
+    padding: 10px;
+}
+
 /* Set section styles */
 section {
+    text-align: center;
     padding: 20px;
     margin-bottom: 20px;
-    background-color: #fff;
-    flex-grow: 1; /* Added */
+    color: #333;
+    flex-grow: 1;
+}
+
+section#landing {
+    background-color: #90caf9; /* Blue */
+}
+
+section#about {
+    background-color: #ba68c8; /* Violet */
+}
+
+section#projects {
+    background-color: #90caf9; /* Blue */
+}
+
+section#contact {
+    background-color: #ba68c8; /* Violet */
+}
+
+.project-images {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.project-images img {
+    width: 300px;
+    height: auto;
+}
+
+.project img {
+    width: 300px;
+    height: auto;
+}
+
+.project h4 {
+    margin-top: 10px;
 }
 
 section h2 {
