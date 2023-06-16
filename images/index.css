@@ -40,6 +40,16 @@ header img {
     object-fit: cover;
 }
 
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #090580;
+  color: #fff;
+  padding: 20px;
+  z-index: 1;
+}
+
 nav ul {
     list-style-type: none;
     text-align: center;
